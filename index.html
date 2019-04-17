@@ -289,7 +289,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://card4422.github.io/2019/04/11/en/NP-completeness/">
+    <link itemprop="mainEntityOfPage" href="https://card4422.github.io/2019/04/17/Greedy-Algorithm/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zheng Zhu">
@@ -308,7 +308,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/11/en/NP-completeness/" itemprop="url">NP-completeness</a></h1>
+                <a class="post-title-link" href="/2019/04/17/Greedy-Algorithm/" itemprop="url">Greedy Algorithm</a></h1>
         
 
         <div class="post-meta">
@@ -320,8 +320,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-11T00:05:55-04:00">
-                2019-04-11
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-17T01:08:56-04:00">
+                2019-04-17
               </time>
             
 
@@ -343,393 +343,24 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Notes/" itemprop="url" rel="index">
-                    <span itemprop="name">Notes</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Notes/Algorithm/" itemprop="url" rel="index">
+                  <a href="/categories/Algorithm/" itemprop="url" rel="index">
                     <span itemprop="name">Algorithm</span>
                   </a>
                 </span>
 
                 
                 
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/04/11/en/NP-completeness/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/11/en/NP-completeness/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2019/04/11/en/NP-completeness/" class="leancloud_visitors" data-flag-title="NP-completeness">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
+                  , 
                 
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
-                
-                <span title="Words count in article">
-                  142
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="NP-Completeness"><a href="#NP-Completeness" class="headerlink" title="NP-Completeness"></a>NP-Completeness</h1><h2 id="MIN-VERTEX-COVER"><a href="#MIN-VERTEX-COVER" class="headerlink" title="MIN-VERTEX-COVER"></a>MIN-VERTEX-COVER</h2><h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Given undirected graph $G(V,E)$, find the minimum subset vertices that touch all edges.</p>
-<h3 id="Decision-version-vertex-cover"><a href="#Decision-version-vertex-cover" class="headerlink" title="Decision version (vertex cover):"></a>Decision version (vertex cover):</h3><p>Given $G(V,E)$ and integer $k$, does $G$ contain a vertex cover of size <strong>at most</strong> $k$?</p>
-<h2 id="MAX-INDEPENDENT-SET"><a href="#MAX-INDEPENDENT-SET" class="headerlink" title="MAX-INDEPENDENT-SET"></a>MAX-INDEPENDENT-SET</h2><h3 id="Description-1"><a href="#Description-1" class="headerlink" title="Description"></a>Description</h3><p>Given undirected graph $G(V,E)​$, find the largest subset of vertices, such that there is no edge between them.</p>
-<h3 id="Decision-Version-Independent-set"><a href="#Decision-Version-Independent-set" class="headerlink" title="Decision Version (Independent set):"></a>Decision Version (Independent set):</h3><p>Given $G(V,E)$ and an integer $l$, does $G$ contains an independent set of size <strong>at least</strong> $l$?</p>
-<h3 id="Use-MIN-VERTEX-COVER-to-prove-that-MAX-INDEPEDENT-SET-is-NP-completeness"><a href="#Use-MIN-VERTEX-COVER-to-prove-that-MAX-INDEPEDENT-SET-is-NP-completeness" class="headerlink" title="Use MIN-VERTEX-COVER to prove that MAX-INDEPEDENT-SET is NP-completeness"></a>Use MIN-VERTEX-COVER to prove that MAX-INDEPEDENT-SET is NP-completeness</h3><p>$Proof$: </p>
-<ol>
-<li>Independent-set $\in$ NP : Given certificate $V’$, we can check whether<ul>
-<li>$V’\subseteq V\rightarrow \Theta(\left|V’\right|)$</li>
-<li>$\left|V’ \right|\geq l\rightarrow \Theta(1)$</li>
-<li>$V’$ is an independent set$\rightarrow \Theta(E)$</li>
-<li>These procedures can be processed in polynomial time.</li>
-</ul>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://card4422.github.io/2019/03/27/en/Bucket-Sort/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zheng Zhu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/27/en/Bucket-Sort/" itemprop="url">Bucket Sort</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-27T02:00:34-04:00">
-                2019-03-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/03/27/en/Bucket-Sort/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/27/en/Bucket-Sort/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2019/03/27/en/Bucket-Sort/" class="leancloud_visitors" data-flag-title="Bucket Sort">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
-                
-                <span title="Words count in article">
-                  12
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Bucket-Sort"><a href="#Bucket-Sort" class="headerlink" title="Bucket Sort"></a>Bucket Sort</h1><h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><ul>
-<li>Input: A[1,2…n]</li>
-<li>Output: A sorted array</li>
-</ul>
-<h2 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h2><h2 id="Runtime"><a href="#Runtime" class="headerlink" title="Runtime"></a>Runtime</h2>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://card4422.github.io/2019/03/22/en/Socket-Programming-in-Linux/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zheng Zhu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/22/en/Socket-Programming-in-Linux/" itemprop="url">Socket Programming in Linux</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-22T03:58:26-04:00">
-                2019-03-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Notes/" itemprop="url" rel="index">
+                  <a href="/categories/Algorithm/Notes/" itemprop="url" rel="index">
                     <span itemprop="name">Notes</span>
                   </a>
                 </span>
 
                 
                 
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Notes/Computer-Network/" itemprop="url" rel="index">
-                    <span itemprop="name">Computer Network</span>
-                  </a>
-                </span>
-
-                
-                
               
             </span>
           
@@ -741,8 +372,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/03/22/en/Socket-Programming-in-Linux/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/22/en/Socket-Programming-in-Linux/" itemprop="commentCount"></span>
+                <a href="/2019/04/17/Greedy-Algorithm/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/17/Greedy-Algorithm/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -750,7 +381,7 @@
 
           
           
-             <span id="/2019/03/22/en/Socket-Programming-in-Linux/" class="leancloud_visitors" data-flag-title="Socket Programming in Linux">
+             <span id="/2019/04/17/Greedy-Algorithm/" class="leancloud_visitors" data-flag-title="Greedy Algorithm">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -775,7 +406,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  0
+                  398
                 </span>
               
 
@@ -802,7 +433,81 @@
       
         
           
-            
+            <h1 id="Greedy-Algorithm"><a href="#Greedy-Algorithm" class="headerlink" title="Greedy Algorithm"></a>Greedy Algorithm</h1><h2 id="Minimum-Stops"><a href="#Minimum-Stops" class="headerlink" title="Minimum Stops"></a>Minimum Stops</h2><h3 id="Description"><a href="#Description" class="headerlink" title="Description:"></a>Description:</h3><p>There is a set of stops $s_1,s_2…s_n$ where cars can charge. After one charge, a car can go at most $m$ miles.</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input:"></a>Input:</h3><p>A set of stops $S$, $m$ miles</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output:"></a>Output:</h3><p>Least subset of stops that the car go through the way.</p>
+<h3 id="Greedy-Choice"><a href="#Greedy-Choice" class="headerlink" title="Greedy Choice"></a>Greedy Choice</h3><p>There is an optimal set of stops that contains $s_j$ , such that $s_j$ is the last stop before $m$ miles. $s_j\leq m$ .</p>
+<h4 id="Proof"><a href="#Proof" class="headerlink" title="Proof"></a>Proof</h4><p>Let $S$ be an optimal set of stops.</p>
+<ul>
+<li>If $s_j\in S$, done.</li>
+<li>If not. Let $s_k$ be the first stop in $S$. $s_k\leq s_j\leq m$.</li>
+<li>Then construct $S^*=(S-\left{s_k\right})\bigcup \left{s_j\right}$ </li>
+<li>$S^*$ is feasible. Supposed that the second stop in the $S$ is $s_p$, we know that $s_p-s_k\leq m$. Then $s_p-s_j\leq m$ because $s_k\leq s_j$.</li>
+<li>$\left|S^<em>\right|=\left|S\right|$, so $S^</em>$ is also a optimal solution. </li>
+</ul>
+<h4 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h4><ul>
+<li>Why select the first stop to construct $S^*$ to make the contradiction?</li>
+<li>It can select any suitable stop, but the first stop is the easiest to find the contradiction.</li>
+</ul>
+<h2 id="Activity-Selection"><a href="#Activity-Selection" class="headerlink" title="Activity Selection:"></a>Activity Selection:</h2><h3 id="Input-1"><a href="#Input-1" class="headerlink" title="Input:"></a>Input:</h3><p>Set of activities $a_1,a_2…a_n$ , $s_i$ represents the start time of $a_i$ , $f_i$ represents the end time of $a_i$. the range of $a_i$ is $[s_i,f_i)$.</p>
+<h3 id="Output-1"><a href="#Output-1" class="headerlink" title="Output:"></a>Output:</h3><p>Largest subset of non-overlapping algorithm.</p>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">$i$</th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">5</th>
+<th style="text-align:center">6</th>
+<th style="text-align:center">7</th>
+<th style="text-align:center">8</th>
+<th style="text-align:center">9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$s_i$</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">13</td>
+</tr>
+<tr>
+<td style="text-align:center">$f_i$</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">16</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The optimal solution is $\left{a_2,a_5,a_7,a_9\right}$    </li>
+</ul>
+<h3 id="Greedy-Choice-1"><a href="#Greedy-Choice-1" class="headerlink" title="Greedy Choice"></a>Greedy Choice</h3><p>There is at least one optimal solution that contains the activity with the earliest finishing time.</p>
+<h4 id="Proof-1"><a href="#Proof-1" class="headerlink" title="Proof"></a>Proof</h4><ul>
+<li>Let $S$ be an optimal set of activities. Let $a_j$ be the activity with earliest finishiing time.</li>
+<li>If $a_j\in S$, done.</li>
+<li>If not, then let $a_j$ be the activity in $S$ that have the earliest finishing time.</li>
+<li>Since $a_j​$ has earliest finishing time across all activities, $f_j\leq f_l​$.</li>
+<li>Then construct $S’=(S-\left{a_l\right})\bigcup \left{a_j\right}$</li>
+<li>$S$ is feasible, so there is no other activity in $S$ that sharts before $f_l\Rightarrow$ no other activity in $S’$ starts before $f_j\Rightarrow$ $S’$ is feasible.</li>
+<li>$\left|S’\right|=\left|S\right|$, $S’$ is optimal, too.</li>
+<li>Here is an example. $S=\left{a_2,a_5,a_7,a_9\right}$, $S’=\left{a_1,a_5,a_7,a_9\right}$</li>
+</ul>
+<h4 id="Runtime-Theta-n"><a href="#Runtime-Theta-n" class="headerlink" title="Runtime: $\Theta(n)$"></a>Runtime: $\Theta(n)$</h4>
           
         
       
@@ -850,7 +555,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://card4422.github.io/2018/03/23/en/Some-Useful-Command-in-Hexo/">
+    <link itemprop="mainEntityOfPage" href="https://card4422.github.io/2018/03/23/Some-Useful-Command-in-Hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zheng Zhu">
@@ -869,7 +574,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/23/en/Some-Useful-Command-in-Hexo/" itemprop="url">Some Useful Command in Hexo</a></h1>
+                <a class="post-title-link" href="/2018/03/23/Some-Useful-Command-in-Hexo/" itemprop="url">Some Useful Command in Hexo</a></h1>
         
 
         <div class="post-meta">
@@ -900,8 +605,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/03/23/en/Some-Useful-Command-in-Hexo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/03/23/en/Some-Useful-Command-in-Hexo/" itemprop="commentCount"></span>
+                <a href="/2018/03/23/Some-Useful-Command-in-Hexo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/03/23/Some-Useful-Command-in-Hexo/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -909,7 +614,7 @@
 
           
           
-             <span id="/2018/03/23/en/Some-Useful-Command-in-Hexo/" class="leancloud_visitors" data-flag-title="Some Useful Command in Hexo">
+             <span id="/2018/03/23/Some-Useful-Command-in-Hexo/" class="leancloud_visitors" data-flag-title="Some Useful Command in Hexo">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1012,7 +717,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://card4422.github.io/2018/03/19/en/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://card4422.github.io/2018/03/19/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zheng Zhu">
@@ -1031,7 +736,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/19/en/hello-world/" itemprop="url">Hello World</a></h1>
+                <a class="post-title-link" href="/2018/03/19/hello-world/" itemprop="url">Hello World</a></h1>
         
 
         <div class="post-meta">
@@ -1062,8 +767,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/03/19/en/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/03/19/en/hello-world/" itemprop="commentCount"></span>
+                <a href="/2018/03/19/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/03/19/hello-world/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1071,7 +776,7 @@
 
           
           
-             <span id="/2018/03/19/en/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
+             <span id="/2018/03/19/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -1213,7 +918,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1224,7 +929,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1235,7 +940,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -1303,7 +1008,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">292</span>
+    <span title="Site words total count">536</span>
   
 </div>
 
