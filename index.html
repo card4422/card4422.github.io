@@ -441,12 +441,12 @@
 <ul>
 <li>If $s_j\in S$, done.</li>
 <li>If not. Let $s_k$ be the first stop in $S$. $s_k\leq s_j\leq m$.</li>
-<li>Then construct $S^*=(S-\left{s_k\right})\bigcup \left{s_j\right}$ </li>
-<li>$S^*$ is feasible. Supposed that the second stop in the $S$ is $s_p$, we know that $s_p-s_k\leq m$. Then $s_p-s_j\leq m$ because $s_k\leq s_j$.</li>
-<li>$\left|S^<em>\right|=\left|S\right|$, so $S^</em>$ is also a optimal solution. </li>
+<li>Then construct $S’=(S-\left{s_k\right})\bigcup \left{s_j\right}$ </li>
+<li>$S’$ is feasible. Supposed that the second stop in the $S$ is $s_p$, we know that $s_p-s_k\leq m$. Then $s_p-s_j\leq m$ because $s_k\leq s_j$.</li>
+<li>$\left|S’\right|=\left|S\right|$, so $S’$ is also a optimal solution. </li>
 </ul>
 <h4 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h4><ul>
-<li>Why select the first stop to construct $S^*$ to make the contradiction?</li>
+<li>Why select the first stop to construct $S’$ to make the contradiction?</li>
 <li>It can select any suitable stop, but the first stop is the easiest to find the contradiction.</li>
 </ul>
 <h2 id="Activity-Selection"><a href="#Activity-Selection" class="headerlink" title="Activity Selection:"></a>Activity Selection:</h2><h3 id="Input-1"><a href="#Input-1" class="headerlink" title="Input:"></a>Input:</h3><p>Set of activities $a_1,a_2…a_n$ , $s_i$ represents the start time of $a_i$ , $f_i$ represents the end time of $a_i$. the range of $a_i$ is $[s_i,f_i)$.</p>
